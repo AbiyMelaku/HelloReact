@@ -27,7 +27,7 @@ var GreeterForm = React.createClass({
       updates.name = name;
     }
     
-    if( message.length > 1 ){
+    if( message.length > 0 ){
       this.refs.message.value = '';
       updates.message = message;
     }
@@ -43,7 +43,7 @@ var GreeterForm = React.createClass({
             <input type="text" placeholder="Enter name" ref="name"/>
           </div>
           <div>
-            <textarea placeholder="Enter message" ref="message"> </textarea>
+            <textarea placeholder="Enter message" ref="message"></textarea>
           </div>
           <div>
             <button> submit </button>
