@@ -1,7 +1,7 @@
 module.exports = {
   
   //specify the input
-  entry: './public/app.jsx',
+  entry: './app/app.jsx',
   
   //specify the output
   output: {
@@ -13,9 +13,6 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-      Greeter: 'public/components/Greeter.jsx',
-      GreeterMessage: 'public/components/GreeterMessage.jsx',
-      GreeterForm: 'public/components/GreeterForm.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
